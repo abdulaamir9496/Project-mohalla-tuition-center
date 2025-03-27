@@ -1,0 +1,58 @@
+mkdir mohalla-tuition-center
+cd mohalla-tuition-center
+git init
+
+npm init -y
+
+mohalla-tuition-center/
+├── config/
+│   └── db.js                # Database connection setup
+├── controllers/             # Business logic for each route
+├── middlewares/             # Middleware for authentication, error handling, etc.
+├── models/                  # Mongoose schemas/models
+├── routes/                  # Express route definitions
+├── utils/                   # Utility functions (e.g., logger)
+├── .env                     # Environment variables
+├── app.js                   # Main application file
+└── package.json
+
+
+3. Install Essential Dependencies
+Install the core packages for building your backend:
+
+npm install express cors helmet
+npm install mongoose
+npm install jsonwebtoken bcryptjs
+npm install dotenv
+npm install --save-dev nodemon
+
+"scripts": {
+  "start": "node app.js",
+  "dev": "nodemon app.js"
+}
+
+
+To prevent sensitive or unnecessary files from being pushed to GitHub, create a `.gitignore` file in your project root. Here’s a short example based on the files and folders mentioned:
+
+```gitignore
+# Node modules
+node_modules/
+
+# Environment variables (do not commit sensitive data)
+.env
+
+# Logs
+logs/
+*.log
+
+# Uploaded files (if you don't want to store them in the repo)
+uploads/
+
+# OS-specific files
+.DS_Store
+
+# Editor-specific files
+.vscode/
+```
+
+This will ignore folders like `node_modules`, the `.env` file, log files, the `uploads/` folder, and any OS or editor-specific files, ensuring only the necessary code is pushed to GitHub.

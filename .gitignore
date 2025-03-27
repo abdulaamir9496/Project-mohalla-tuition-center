@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+
+# Environment variables (do not commit sensitive data)
+.env
+
+# Logs
+logs/
+# *.log
+
+# Uploaded files (if you don't want to store them in the repo)
+uploads/
+
+# OS-specific files
+.DS_Store
+
+# Editor-specific files
+.vscode/
